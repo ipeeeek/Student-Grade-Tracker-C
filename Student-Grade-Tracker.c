@@ -31,7 +31,7 @@ int registryStatus = 0; // Kayit surecini tekrar baslatmamak ve kayit durumunu k
 
 int main() {
     int operator = 0;
-    printf("\nMENU\n1 - Add Registryistry\n2 - List Registryistry\n3 - Calculate Grades\n4 - Sort Grades\n5 - Statistics\n6 - Exit\n");
+    printf("\nMENU\n1 - Add Registry\n2 - List Registry\n3 - Calculate Grades\n4 - Sort Grades\n5 - Statistics\n6 - Exit\n");
 
 
     while (operator < 6){ // Menudeki islemlerin tekrarlanabilmesi icin 6 dan kucuk olma sarti saglanmali.
@@ -53,9 +53,9 @@ int main() {
                     printf("\nChoose an operation: ");
                     scanf(" %d", &operator);
                 } else { // Kayit kapasitesi dolmadiysa kayit alma fonksiyonuna gecilir.
-                    printf("\n --(0_0)-- --(0o0)-- --(^-^)-- |Add Registryistry| --(0_0)-- --(0o0)-- --(^-^)-- \n");
+                    printf("\n --(0_0)-- --(0o0)-- --(^-^)-- |Add Registry| --(0_0)-- --(0o0)-- --(^-^)-- \n");
                     addRegistry();
-                    printf("\nMENU\n1 - Add Registryistry\n2 - List Registryistry\n3 - Calculate Grades\n4 - Sort Grades\n5 - Statistics\n6 - Exit\n");
+                    printf("\nMENU\n1 - Add Registry\n2 - List Registry\n3 - Calculate Grades\n4 - Sort Grades\n5 - Statistics\n6 - Exit\n");
                     printf("\nChoose an operation: ");
                     scanf(" %d", &operator);
                 }
@@ -70,26 +70,26 @@ int main() {
                         scanf(" %d", &operator);
                 }
                 while (operator == 2){
-                    printf("\n --(0_0)-- --(0o0)-- --(^-^)-- |List Registryistry| --(0_0)-- --(0o0)-- --(^-^)-- \n");
+                    printf("\n --(0_0)-- --(0o0)-- --(^-^)-- |List Registry| --(0_0)-- --(0o0)-- --(^-^)-- \n");
                     Grade();
                     letterGrade();
                     abbreviation();
                     passFail();
                     listRegistry();
-                    printf("\nMENU\n1 - Add Registryistry\n2 - List Registryistry\n3 - Calculate Grades\n4 - Sort Grades\n5 - Statistics\n6 - Exit\n");
+                    printf("\nMENU\n1 - Add Registry\n2 - List Registry\n3 - Calculate Grades\n4 - Sort Grades\n5 - Statistics\n6 - Exit\n");
                     printf("\nChoose an operation: ");
                     scanf(" %d", &operator);
                 }
                 }
         // 1 isleminden sonra 2 ye gecilme sarti saglandiktan sonra fonksiyonlar arasi ozgurce gecis saglanir.
         while (operator == 2){
-                printf("\n --(0_0)-- --(0o0)-- --(^-^)-- |List Registryistry| --(0_0)-- --(0o0)-- --(^-^)-- \n");
+                printf("\n --(0_0)-- --(0o0)-- --(^-^)-- |List Registry| --(0_0)-- --(0o0)-- --(^-^)-- \n");
                 Grade();
                 letterGrade();
                 abbreviation();
                 passFail();
                 listRegistry();
-                printf("\nMENU\n1 - Add Registryistry\n2 - List Registryistry\n3 - Calculate Grades\n4 - Sort Grades\n5 - Statistics\n6 - Exit\n");
+                printf("\nMENU\n1 - Add Registry\n2 - List Registry\n3 - Calculate Grades\n4 - Sort Grades\n5 - Statistics\n6 - Exit\n");
                 printf("\nChoose an operation: ");
                 scanf(" %d", &operator);
         }
@@ -99,7 +99,7 @@ int main() {
                 letterGrade();
                 abbreviation();
                 listGrade();
-                printf("\nMENU\n1 - Add Registryistry\n2 - List Registryistry\n3 - Calculate Grades\n4 - Sort Grades\n5 - Statistics\n6 - Exit\n");
+                printf("\nMENU\n1 - Add Registry\n2 - List Registry\n3 - Calculate Grades\n4 - Sort Grades\n5 - Statistics\n6 - Exit\n");
                 printf("\nChoose an operation: ");
                 scanf(" %d", &operator);
         }
@@ -111,7 +111,7 @@ int main() {
                 sortGrades();
                 abbreviation();
                 listRegistry();
-                printf("\nMENU\n1 - Add Registryistry\n2 - List Registryistry\n3 - Calculate Grades\n4 - Sort Grades\n5 - Statistics\n6 - Exit\n");
+                printf("\nMENU\n1 - Add Registry\n2 - List Registry\n3 - Calculate Grades\n4 - Sort Grades\n5 - Statistics\n6 - Exit\n");
                 printf("\nChoose an operation: ");
                 scanf(" %d", &operator);
         }
@@ -119,7 +119,7 @@ int main() {
                 printf("\n --(0_0)-- --(0o0)-- --(^-^)-- |Statistics| --(0_0)-- --(0o0)-- --(^-^)-- \n");
                 Grade();
                 statistics();
-                printf("\nMENU\n1 - Add Registryistry\n2 - List Registryistry\n3 - Calculate Grades\n4 - Sort Grades\n5 - Statistics\n6 - Exit\n");
+                printf("\nMENU\n1 - Add Registry\n2 - List Registry\n3 - Calculate Grades\n4 - Sort Grades\n5 - Statistics\n6 - Exit\n");
                 printf("\nChoose an operation: ");
                 scanf(" %d", &operator);
         }
